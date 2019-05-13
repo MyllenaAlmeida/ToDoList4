@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  tasks = ['myllena', 'teste', 'elemento1'];
+  // como declarar task aqui?
+  addTask() {
+    this.tasks.push(this.task);
+  }
+
+  deleteTask(i) {
+    console.log('deletou');
+    this.tasks.splice(i, 1);
+  }
 }
